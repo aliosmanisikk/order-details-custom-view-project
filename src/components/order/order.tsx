@@ -51,25 +51,6 @@ const Order = () => {
   }
 
   return (
-    <Spacings.Stack scale="xl">
-      <Spacings.Stack scale="s">
-        <Text.Headline as="h2" intlMessage={messages.title} />
-        <Text.Subheadline as="h4">
-          {intl.formatMessage(messages.subtitle, {
-            firstName: user?.firstName,
-            lastName: user?.lastName,
-          })}
-        </Text.Subheadline>
-      </Spacings.Stack>
-
-      <Constraints.Horizontal max={13}>
-        <ContentNotification type="info">
-          <Text.Body intlMessage={messages.demoHint} />
-        </ContentNotification>
-      </Constraints.Horizontal>
-
-      {loading && <LoadingSpinner />}
-
       {result ? (
         <Spacings.Stack scale="l">
           
@@ -90,7 +71,6 @@ const Order = () => {
 
         </Spacings.Stack>
       ) : null}
-    </Spacings.Stack>
   );
 };
 Order.displayName = 'Order Details';

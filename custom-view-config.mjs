@@ -9,8 +9,8 @@ const config = {
       initialProjectKey: 'io-white-label-development',
     },
     production: {
-      customViewId: 'cme899v30001k1i01absr8lbn',
-      url: 'https://order-details-view-project-gamma.vercel.app/',
+      customViewId: 'cmecvm5kh000oxc018ppe6wtm',
+      url: 'https://order-details-custom-view-project.vercel.app/',
     },
   },
   oAuthScopes: {
