@@ -51,6 +51,9 @@ const Order = () => {
   }
 
   return (
+    <Spacings.Stack scale="xl">
+      {loading && <LoadingSpinner />}
+
       {result ? (
         <Spacings.Stack scale="l">
           
@@ -71,6 +74,7 @@ const Order = () => {
 
         </Spacings.Stack>
       ) : null}
+    </Spacings.Stack>
   );
 };
 Order.displayName = 'Order Details';
