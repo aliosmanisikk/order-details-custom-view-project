@@ -22,6 +22,13 @@ const config = {
     size: 'LARGE',
   },
   locators: ['orders.order_details.general'],
+  headers: {
+    csp: {
+      'connect-src': ['*'],
+      'frame-src': ['*'],
+      'script-src': ['*'],
+    },
+  },
 };
 
 export default config;

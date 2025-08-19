@@ -62,7 +62,7 @@ const Order = () => {
               gridAutoColumns="1fr"
               gridTemplateColumns="repeat(2, 1fr)"
             >
-              <iframe src={`https://io-whitelabel-cxro-2893.grandvision.io/order/confirm?orderData=${result.orderNumber}`} title="Order details"></iframe>
+              <iframe  width="1120" height="2240" src={`https://io-whitelabel-cxro-2893.grandvision.io/order/confirm?orderData=${result.orderNumber}`} title="Order details"></iframe>
             </Grid>
 
         </Spacings.Stack>
