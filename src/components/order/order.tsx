@@ -62,14 +62,7 @@ const Order = () => {
               gridAutoColumns="1fr"
               gridTemplateColumns="repeat(2, 1fr)"
             >
-              <Text.Body>{'Order ID'}</Text.Body>
-              <Text.Body>{result.id}</Text.Body>
-              <Text.Body>{'Order number'}</Text.Body>
-              <Text.Body>{result.orderNumber}</Text.Body>
-              <Text.Body>{'Payment method'}</Text.Body>
-              <Text.Body>{result.paymentInfo?.payments[0].paymentMethodInfo?.method}</Text.Body>
-              <Text.Body>{'SAP invoice'}</Text.Body>
-              <Text.Body>TO DO</Text.Body>
+              <iframe src={`https://io-whitelabel-cxro-2893.grandvision.io/order/confirm?orderData=${result.orderNumber}`} title="Order details"></iframe>
             </Grid>
 
         </Spacings.Stack>
